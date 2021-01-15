@@ -4,7 +4,7 @@ Player::Player()
 {
 	cout << "Сработка конструктора по умолчанию Player!\n\n";
 	Sleep(1000);
-	score = 0;
+	money = 0;
 	size = 2;			// Первая раздача по две карты 
 	nal = new Card[size];
 }
@@ -14,7 +14,7 @@ Player::Player(const Player& copy)
 	cout << "Сработка конструктора копирования Player!\n\n";
 	Sleep(1000);
 	this->size = copy.size;
-	this->score = copy.score;
+	this->money = copy.money;
 	nal = new Card[size];
 	memcpy(nal, copy.nal, sizeof(int) * size);
 }
@@ -26,8 +26,8 @@ int Player::SetScore()
 	{
 		tmp = tmp + nal[i].getScore();
 	}
-	score = tmp;
-	return score;
+	money = tmp;
+	return money;
 }
 
 void Player::PrintNal()
@@ -65,7 +65,7 @@ void Player::SingleDistribution(Card_Batch& but)
 
 int Player::getScore()
 {
-	return score;
+	return money;
 }
 
 void Player::setSize(int sz)
@@ -75,7 +75,7 @@ void Player::setSize(int sz)
 
 void Player::setScore(int scr)
 {
-	this->score = scr;
+	this->money = scr;
 }
 
 Player::~Player()

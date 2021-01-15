@@ -1,13 +1,13 @@
 #pragma once
 #include "Data.h"
 
-void Application::menu()
+void ProgrammData::menu()
 {
 	cout << "[1] Старт" << endl;
 	cout << "[0] Выход" << endl;
 }
 
-bool Application::runAction(int action)
+bool ProgrammData::runAction(int action)
 {
 	switch (action) 
 	{
@@ -15,19 +15,19 @@ bool Application::runAction(int action)
 		return false;
 		break;
 	case 1:
-		Game();
+		ProgData();
 		cout << endl;
 		system("pause");
 		break;
 	}
-
 	return true;
 }
 
-void Application::start()
+void ProgrammData::start()
 {
 	int action;
-	while (true) {
+	while (true) 
+	{
 		system("cls");
 
 		menu();
@@ -39,7 +39,7 @@ void Application::start()
 	}
 }
 
-customPrintf Application::Game()
+customPrintf ProgrammData::ProgData()
 {
 	customPrintf d;
 	d.custom_Printf("C%d%f%s%f%s%f%s%f%s", "Program Files", "Adobe", "bin", "adobe.exe");

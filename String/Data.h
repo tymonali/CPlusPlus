@@ -1,12 +1,9 @@
 #pragma once
-#include <iostream>
-#include <Windows.h>
-#include <conio.h>
 #include"customPrintf.h"
 
 using namespace std;
 
-class Application
+class ProgrammData
 {
 	int a, b;
 
@@ -15,5 +12,5 @@ class Application
 
 public:
 	void start();
-	customPrintf Game();
+	customPrintf ProgData();
 };

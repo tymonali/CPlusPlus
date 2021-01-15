@@ -1,11 +1,8 @@
 #pragma once
-#pragma once
 #include <iostream>
 #include <stdarg.h>
 
-
 using namespace std;
-
 
 class customPrintf
 {

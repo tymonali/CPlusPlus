@@ -4,7 +4,7 @@
 class Player
 {
 	
-	int score;
+	int money;
 	int size;
 	Card* nal;
 public:

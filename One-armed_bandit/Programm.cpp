@@ -1,14 +1,12 @@
-#include "Data.h"
-#include<Windows.h>
+#include"App.h"
 
 int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	system("color B0");
-
-	ProgrammData app;
-	app.start();
-
-	return 0;
+    
+	srand(time(0));
+	App newapp;
+	newapp.Start();
 }

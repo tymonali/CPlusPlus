@@ -6,7 +6,8 @@ bool customPrintf::isAvailableFormat(char symb)
 
 	for (int i = 0; i < strlen(availableFormats); i++) 
 	{
-		if (availableFormats[i] == symb) {
+		if (availableFormats[i] == symb) 
+		{
 			return true;
 		}
 	}
@@ -16,19 +17,15 @@ bool customPrintf::isAvailableFormat(char symb)
 void customPrintf::custom_Printf(const char* format, ...)
 {
 	va_list list;
-	va_start(list, format);		//открываем указатель
+	va_start(list, format);		
 
 	for (char* tmp = (char*)format; *tmp; tmp++) 
 	{
-		//cout << tmp << endl;
 		if (*tmp == '%') 
 		{
-			//переход к следующему символу
 			tmp++;
-			//формат доступен
 			if (isAvailableFormat(*tmp)) 
 			{
-
 				switch (*tmp) 
 				{
 					case 's': 
@@ -46,7 +43,6 @@ void customPrintf::custom_Printf(const char* format, ...)
 						cout << ":";
 						break;
 					}
-
 				}
 			}
 			else 
@@ -58,7 +54,6 @@ void customPrintf::custom_Printf(const char* format, ...)
 		{
 			cout << *tmp;
 		}
-
 	}
-	va_end(list);		//закрываем указатель
+	va_end(list);
 }
