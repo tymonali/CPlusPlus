@@ -131,7 +131,7 @@ int LinkedList::search(int value)
 			}
 		}
 	}
-	return idx;
+	return NULL;
 }
 
 bool LinkedList::isEmpty()
