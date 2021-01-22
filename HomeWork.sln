@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Phone_Book", "Phone_Book\Ph
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SinglyLinkedList", "SinglyLinkedList\SinglyLinkedList.vcxproj", "{411FC4E1-91E6-4F83-98E6-838F1312A043}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateQueue", "TemplateQueue\TemplateQueue.vcxproj", "{A18684AA-8771-4ABE-A8EE-105037DFA04B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -143,6 +145,14 @@ Global
 		{411FC4E1-91E6-4F83-98E6-838F1312A043}.Release|x64.Build.0 = Release|x64
 		{411FC4E1-91E6-4F83-98E6-838F1312A043}.Release|x86.ActiveCfg = Release|Win32
 		{411FC4E1-91E6-4F83-98E6-838F1312A043}.Release|x86.Build.0 = Release|Win32
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Debug|x64.ActiveCfg = Debug|x64
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Debug|x64.Build.0 = Debug|x64
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Debug|x86.ActiveCfg = Debug|Win32
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Debug|x86.Build.0 = Debug|Win32
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Release|x64.ActiveCfg = Release|x64
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Release|x64.Build.0 = Release|x64
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Release|x86.ActiveCfg = Release|Win32
+		{A18684AA-8771-4ABE-A8EE-105037DFA04B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

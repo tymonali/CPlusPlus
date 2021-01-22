@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="NodeD.cpp" />
     <ClCompile Include="TemplateQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
