@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<Windows.h>
+#include<conio.h>	//	_getch();
 
 using std::cout;
 using std::cin;
@@ -15,4 +16,11 @@ struct Node
 
 	Node();
 };
+
+template <typename T>
+Node<T>::Node()
+{
+	value = NULL;
+	next = prev = nullptr;
+}
 
