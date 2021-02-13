@@ -40,7 +40,7 @@ inline TemplateQueue<T>::TemplateQueue(int n)
 	capacity = n;
 	count = 0;
 	head = tail = nullptr;
-	cout << "Count(const) = " << count << "\n";
+	//cout << "Count(const) = " << count << "\n";
 }
 
 template<class T>
@@ -92,7 +92,7 @@ inline void TemplateQueue<T>::Add(T value)
 {
 	if (isFullQ())
 	{
-		cout << "Count(Add) = " << count << "\n";
+		//cout << "Count(Add) = " << count << "\n";
 		cout << "Очередь заполнена!!!\n";
 		cout << "Нажмите любую клавишу...\n";
 		_getch();
